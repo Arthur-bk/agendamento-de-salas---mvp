@@ -94,7 +94,7 @@ A Railway facilita subir o Backend (NestJS) e o Frontend (Next.js) e um Postgres
   - Start command: `node dist/main.js`
 - Após o deploy, abra um Shell no serviço Backend e rode a migração:
 ```bash
-npx prisma migrate deploy
+npm run prisma:deploy
 # (Opcional) seed se desejado:
 node -e "require('ts-node/register'); require('./prisma/seed.ts');"
 ```
